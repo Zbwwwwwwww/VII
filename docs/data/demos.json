@@ -1,0 +1,334 @@
+{
+  "notice": "Some demos may contain sensitive content and are provided for academic research and safety evaluation only.",
+  "groups": [
+    {
+      "id": "sex",
+      "title": "Sexual Content",
+      "disclaimer": "This section contains sexual-content intent prompts and may include sensitive generated videos. It is provided strictly for academic research and safety evaluation.",
+      "items": [
+        {
+          "id": "sex-22",
+          "tag": "Sex",
+          "title": "S-22",
+          "unsafe_prompt": "Example unsafe intent prompt (placeholder): A person performs explicit sexual acts. (TBD)",
+          "images": {
+            "input": "media/main_paper_video/sex/22.png",
+            "injected": "media/main_paper_video/sex/resp_attack_concept_22.png"
+          },
+          "videos": {
+            "baseline": "media/main_paper_video/sex/22baseline.mp4",
+            "ours_mask": "media/main_paper_video/sex/22mask.mp4",
+            "ours_original": "media/main_paper_video/sex/22method.mp4"
+          }
+        },
+        {
+          "id": "sex-61",
+          "tag": "Sex",
+          "title": "S-61",
+          "unsafe_prompt": "Example unsafe intent prompt (placeholder): Sexual content intent. (TBD)",
+          "images": {
+            "input": "media/main_paper_video/sex/61.png",
+            "injected": "media/main_paper_video/sex/resp_attack_concept_61.png"
+          },
+          "videos": {
+            "baseline": "media/main_paper_video/sex/61baseline.mp4",
+            "ours_mask": "media/main_paper_video/sex/61mask.mp4",
+            "ours_original": "media/main_paper_video/sex/61method.mp4"
+          }
+        },
+        {
+          "id": "sex-36-0",
+          "tag": "Sex",
+          "title": "S-36-0",
+          "unsafe_prompt": "Example unsafe intent prompt (placeholder): Sexual harassment / nudity intent. (TBD)",
+          "images": {
+            "input": "media/main_paper_video/sex/36base.jpg",
+            "injected": "media/main_paper_video/sex/resp_attack_36_0.png"
+          },
+          "videos": {
+            "baseline": "media/main_paper_video/sex/36_0baseline.mp4",
+            "ours_mask": "media/main_paper_video/sex/36_0mask.mp4",
+            "ours_original": "media/main_paper_video/sex/36_0method.mp4"
+          }
+        },
+        {
+          "id": "coco-sex-3-kling",
+          "tag": "Sex · Kling",
+          "title": "COCO-S-3 (Kling)",
+          "unsafe_prompt": "Example unsafe intent prompt (placeholder): Sexual content intent. (TBD)",
+          "images": {
+            "input": "media/coco/sex/3.jpg",
+            "injected": "media/coco/sex/resp_attack_3_0.png"
+          },
+          "videos": {
+            "baseline": "media/coco/sex/klingbase.mp4",
+            "ours_mask": "media/coco/sex/klingMethodMask.mp4",
+            "ours_original": "media/coco/sex/klingMethod.mp4"
+          }
+        },
+        {
+          "id": "coco-sex-3-pixverse",
+          "tag": "Sex · PixVerse",
+          "title": "COCO-S-3 (PixVerse)",
+          "unsafe_prompt": "Example unsafe intent prompt (placeholder): Sexual content intent. (TBD)",
+          "images": {
+            "input": "media/coco/sex/3.jpg",
+            "injected": "media/coco/sex/resp_attack_3_0.png"
+          },
+          "videos": {
+            "baseline": "media/coco/sex/pixverseBase.mp4",
+            "ours_mask": "media/coco/sex/pixverseMethodMaskmp4.mp4",
+            "ours_original": "media/coco/sex/pixverseMethod.mp4"
+          }
+        },
+        {
+          "id": "coco-sex-3-seedance",
+          "tag": "Sex · Seedance",
+          "title": "COCO-S-3 (Seedance)",
+          "unsafe_prompt": "Example unsafe intent prompt (placeholder): Sexual content intent. (TBD)",
+          "images": {
+            "input": "media/coco/sex/3.jpg",
+            "injected": "media/coco/sex/resp_attack_3_0.png"
+          },
+          "videos": {
+            "baseline": "media/coco/sex/seedancebase.mp4",
+            "ours_mask": "media/coco/sex/seedanceMethodMask.mp4",
+            "ours_original": "media/coco/sex/seedanceMethod.mp4"
+          }
+        },
+        {
+          "id": "coco-sex-3-veo",
+          "tag": "Sex · Veo",
+          "title": "COCO-S-3 (Veo)",
+          "unsafe_prompt": "Example unsafe intent prompt (placeholder): Sexual content intent. (TBD)",
+          "images": {
+            "input": "media/coco/sex/3.jpg",
+            "injected": "media/coco/sex/resp_attack_3_0.png"
+          },
+          "videos": {
+            "baseline": null,
+            "ours_mask": "media/coco/sex/veomethodMask.mp4",
+            "ours_original": "media/coco/sex/veoMethod.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "id": "vio",
+      "title": "Violence & Threats",
+      "disclaimer": "This section contains violence/threat intent prompts and may include sensitive generated videos. It is provided strictly for academic research and safety evaluation.",
+      "items": [
+        {
+          "id": "vio-16-1",
+          "tag": "Vio",
+          "title": "V-16-1",
+          "unsafe_prompt": "Example unsafe intent prompt (placeholder): Violence intent. (TBD)",
+          "images": {
+            "input": "media/main_paper_video/vio/16.jpg",
+            "injected": "media/main_paper_video/vio/resp_attack_16_1.png"
+          },
+          "videos": {
+            "baseline": "media/main_paper_video/vio/16baseline.mp4",
+            "ours_mask": "media/main_paper_video/vio/16mask.mp4",
+            "ours_original": "media/main_paper_video/vio/16_1method.mp4"
+          }
+        },
+        {
+          "id": "vio-156",
+          "tag": "Vio",
+          "title": "V-156",
+          "unsafe_prompt": "Example unsafe intent prompt (placeholder): Violence intent. (TBD)",
+          "images": {
+            "input": "media/main_paper_video/vio/156.png",
+            "injected": "media/main_paper_video/vio/resp_attack_concept_156.png"
+          },
+          "videos": {
+            "baseline": "media/main_paper_video/vio/156baseline.mp4",
+            "ours_mask": "media/main_paper_video/vio/156mask.mp4",
+            "ours_original": "media/main_paper_video/vio/156method.mp4"
+          }
+        },
+        {
+          "id": "coco-vio-15-kling",
+          "tag": "Vio · Kling",
+          "title": "COCO-V-15 (Kling)",
+          "unsafe_prompt": "Example unsafe intent prompt (placeholder): Violence intent. (TBD)",
+          "images": {
+            "input": "media/coco/vio/15.jpg",
+            "injected": "media/coco/vio/resp_attack_15_1.png"
+          },
+          "videos": {
+            "baseline": "media/coco/vio/klingBase.mp4",
+            "ours_mask": "media/coco/vio/klingmethodMaskmp4.mp4",
+            "ours_original": "media/coco/vio/klingMethod.mp4"
+          }
+        },
+        {
+          "id": "coco-vio-15-pixverse",
+          "tag": "Vio · PixVerse",
+          "title": "COCO-V-15 (PixVerse)",
+          "unsafe_prompt": "Example unsafe intent prompt (placeholder): Violence intent. (TBD)",
+          "images": {
+            "input": "media/coco/vio/15.jpg",
+            "injected": "media/coco/vio/resp_attack_15_1.png"
+          },
+          "videos": {
+            "baseline": "media/coco/vio/pixverseBase.mp4",
+            "ours_mask": "media/coco/vio/pixverseMethodMask.mp4",
+            "ours_original": "media/coco/vio/pixverseMethod.mp4"
+          }
+        },
+        {
+          "id": "coco-vio-15-seedance",
+          "tag": "Vio · Seedance",
+          "title": "COCO-V-15 (Seedance)",
+          "unsafe_prompt": "Example unsafe intent prompt (placeholder): Violence intent. (TBD)",
+          "images": {
+            "input": "media/coco/vio/15.jpg",
+            "injected": "media/coco/vio/resp_attack_15_1.png"
+          },
+          "videos": {
+            "baseline": "media/coco/vio/seedanceBase.mp4",
+            "ours_mask": "media/coco/vio/seedanceMethodMask.mp4",
+            "ours_original": "media/coco/vio/seedanceMethod.mp4"
+          }
+        },
+        {
+          "id": "coco-vio-15-veo",
+          "tag": "Vio · Veo",
+          "title": "COCO-V-15 (Veo)",
+          "unsafe_prompt": "Example unsafe intent prompt (placeholder): Violence intent. (TBD)",
+          "images": {
+            "input": "media/coco/vio/15.jpg",
+            "injected": "media/coco/vio/resp_attack_15_1.png"
+          },
+          "videos": {
+            "baseline": "media/coco/vio/veoBase.mp4",
+            "ours_mask": "media/coco/vio/veoMethodMask.mp4",
+            "ours_original": "media/coco/vio/veoMethod.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hat",
+      "title": "Hate & Extremism",
+      "disclaimer": "This section contains hate/extremism intent prompts and may include sensitive generated videos. It is provided strictly for academic research and safety evaluation.",
+      "items": [
+        {
+          "id": "coco-hat-7-kling",
+          "tag": "Hat · Kling",
+          "title": "COCO-H-7 (Kling)",
+          "unsafe_prompt": "Example unsafe intent prompt (placeholder): Hate/extremism intent. (TBD)",
+          "images": {
+            "input": "media/coco/hate/7.jpg",
+            "injected": "media/coco/hate/resp_attack_7_2.png"
+          },
+          "videos": {
+            "baseline": "media/coco/hate/klingBase.mp4",
+            "ours_mask": "media/coco/hate/klingmethodMask.mp4",
+            "ours_original": "media/coco/hate/klingMethod.mp4"
+          }
+        },
+        {
+          "id": "coco-hat-7-pixverse",
+          "tag": "Hat · PixVerse",
+          "title": "COCO-H-7 (PixVerse)",
+          "unsafe_prompt": "Example unsafe intent prompt (placeholder): Hate/extremism intent. (TBD)",
+          "images": {
+            "input": "media/coco/hate/7.jpg",
+            "injected": "media/coco/hate/resp_attack_7_2.png"
+          },
+          "videos": {
+            "baseline": "media/coco/hate/pixverseBase.mp4",
+            "ours_mask": "media/coco/hate/pixverseMethodMask.mp4",
+            "ours_original": "media/coco/hate/pixverseMethod.mp4"
+          }
+        },
+        {
+          "id": "coco-hat-7-seedance",
+          "tag": "Hat · Seedance",
+          "title": "COCO-H-7 (Seedance)",
+          "unsafe_prompt": "Example unsafe intent prompt (placeholder): Hate/extremism intent. (TBD)",
+          "images": {
+            "input": "media/coco/hate/7.jpg",
+            "injected": "media/coco/hate/resp_attack_7_2.png"
+          },
+          "videos": {
+            "baseline": null,
+            "ours_mask": "media/coco/hate/seedanceMethodMask.mp4",
+            "ours_original": "media/coco/hate/seedanceMethod.mp4"
+          }
+        },
+        {
+          "id": "coco-hat-7-veo",
+          "tag": "Hat · Veo",
+          "title": "COCO-H-7 (Veo)",
+          "unsafe_prompt": "Example unsafe intent prompt (placeholder): Hate/extremism intent. (TBD)",
+          "images": {
+            "input": "media/coco/hate/7.jpg",
+            "injected": "media/coco/hate/resp_attack_7_2.png"
+          },
+          "videos": {
+            "baseline": null,
+            "ours_mask": "media/coco/hate/veoMethodMask.mp4",
+            "ours_original": "media/coco/hate/veoMethod.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ill",
+      "title": "Illegal Activities",
+      "disclaimer": "This section contains illegal-activity intent prompts and may include sensitive generated videos. It is provided strictly for academic research and safety evaluation.",
+      "items": [
+        {
+          "id": "coco-ill-49-kling",
+          "tag": "Ill · Kling",
+          "title": "COCO-I-49 (Kling)",
+          "unsafe_prompt": "Example unsafe intent prompt (placeholder): Illegal activity intent. (TBD)",
+          "images": {
+            "input": "media/coco/ill/49.jpg",
+            "injected": "media/coco/ill/resp_attack_49_3.png"
+          },
+          "videos": {
+            "baseline": "media/coco/ill/klingBase.mp4",
+            "ours_mask": null,
+            "ours_original": "media/coco/ill/klingMethod.mp4"
+          }
+        },
+        {
+          "id": "coco-ill-49-seedance",
+          "tag": "Ill · Seedance",
+          "title": "COCO-I-49 (Seedance)",
+          "unsafe_prompt": "Example unsafe intent prompt (placeholder): Illegal activity intent. (TBD)",
+          "images": {
+            "input": "media/coco/ill/49.jpg",
+            "injected": "media/coco/ill/resp_attack_49_3.png"
+          },
+          "videos": {
+            "baseline": "media/coco/ill/seedanceBase.mp4",
+            "ours_mask": null,
+            "ours_original": "media/coco/ill/seedanceMethod.mp4"
+          }
+        },
+        {
+          "id": "coco-ill-49-veo",
+          "tag": "Ill · Veo",
+          "title": "COCO-I-49 (Veo)",
+          "unsafe_prompt": "Example unsafe intent prompt (placeholder): Illegal activity intent. (TBD)",
+          "images": {
+            "input": "media/coco/ill/49.jpg",
+            "injected": "media/coco/ill/resp_attack_49_3.png"
+          },
+          "videos": {
+            "baseline": "media/coco/ill/veoBase.mp4",
+            "ours_mask": null,
+            "ours_original": "media/coco/ill/veoMethod.mp4"
+          }
+        }
+      ]
+    }
+  ]
+}
+

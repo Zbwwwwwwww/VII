@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <title>VII: VISUAL INSTRUCTION INJECTION FOR JAILBREAKING IMAGE-TO-VIDEO GENERATION MODELS</title>
+
+    <meta
+      name="description"
+      content="Visual Instruction Injection (VII): a training-free and transferable jailbreaking framework for Image-to-Video (I2V) generation models via visual instruction injection." />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="VII: VISUAL INSTRUCTION INJECTION FOR JAILBREAKING IMAGE-TO-VIDEO GENERATION MODELS" />
+    <meta
+      property="og:description"
+      content="VII uncovers risks of visual instruction-following in I2V models and proposes a training-free, transferable jailbreaking framework." />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css"
+      crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Varela+Round&display=swap"
+      rel="stylesheet" />
+
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="script.js" defer data-manifest="data/manifest.json"></script>
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <nav class="main-nav" aria-label="Main">
+          <ul class="nav-links">
+            <li><a href="#abstract">Abstract</a></li>
+            <li><a href="#demos">Demos</a></li>
+            <li><a href="#bibtex">BibTeX</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-card">
+          <div class="hero-title">
+            <h1 class="title">
+              <span class="gradient-text">VII:</span> VISUAL INSTRUCTION INJECTION
+              <span class="title-break"></span>
+              FOR JAILBREAKING IMAGE-TO-VIDEO GENERATION MODELS
+            </h1>
+            <p class="subtitle">
+              A training-free and transferable jailbreaking framework for image-to-video (I2V) models via visual instruction injection.
+            </p>
+          </div>
+
+          <div class="author-line" aria-label="Authors">
+            <a class="author-text" href="#" aria-disabled="true">Bowen Zheng<sup>1,2</sup></a>
+            <a class="author-text" href="#" aria-disabled="true">Yongli Xiang<sup>3</sup></a>
+            <a class="author-text" href="#" aria-disabled="true">Ziming Hong<sup>3</sup></a>
+            <a class="author-text" href="#" aria-disabled="true">Zerong Lin<sup>1,2</sup></a>
+          </div>
+          <div class="author-line">
+            <a class="author-text" href="#" aria-disabled="true">Chaojian Yu<sup>1,2</sup></a>
+            <a class="author-text" href="#" aria-disabled="true">Tongliang Liu<sup>3</sup></a>
+            <a class="author-text" href="#" aria-disabled="true">Xinge You<sup>1,2</sup></a>
+          </div>
+          <div class="affiliations" aria-label="Affiliations">
+            <div><sup>1</sup>National Anti-Counterfeit Engineering Research Center, Huazhong University of Science and Technology</div>
+            <div><sup>2</sup>School of Electronic Information and Communications, Huazhong University of Science and Technology</div>
+            <div><sup>3</sup>Sydney AI Centre, The University of Sydney</div>
+          </div>
+
+          <div class="link-labels" aria-label="Links">
+            <a class="link-block" href="https://arxiv.org/abs/2602.20999" target="_blank" rel="noopener noreferrer" title="Paper (arXiv:2602.20999)">
+              <i class="fa fa-file-text main-icon" aria-hidden="true"></i>
+              <span class="link-labels-text">Paper</span>
+            </a>
+            <a class="link-block" href="https://huggingface.co/datasets/yonglixiang/COCO-I2VSafetyBench" target="_blank" rel="noopener noreferrer" title="Dataset: COCO-I2VSafetyBench">
+              <i class="fa fa-database main-icon" aria-hidden="true"></i>
+              <span class="link-labels-text">
+                <span class="link-kicker">Dataset</span>
+                <span class="link-main">COCO-I2VSafetyBench</span>
+              </span>
+            </a>
+            <a class="link-block" href="https://huggingface.co/datasets/yonglixiang/ConceptRisk-Repro" target="_blank" rel="noopener noreferrer" title="Dataset: ConceptRisk">
+              <i class="fa fa-database main-icon" aria-hidden="true"></i>
+              <span class="link-labels-text">
+                <span class="link-kicker">Dataset</span>
+                <span class="link-main">ConceptRisk</span>
+              </span>
+            </a>
+            <a class="link-block" href="https://github.com/Zbwwwwwwww/VII" target="_blank" rel="noopener noreferrer" title="Code">
+              <i class="fa fa-github main-icon" aria-hidden="true"></i>
+              <span class="link-labels-text">Code</span>
+            </a>
+          </div>
+
+          <div class="hero-note">
+            <strong>Note:</strong> This page contains academic demonstrations of I2V safety risks. 
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <main class="main-content">
+      <div class="container">
+        <section id="abstract" class="section">
+          <h2>Abstract</h2>
+          <div class="card">
+            <p class="abstract">
+              Image-to-Video (I2V) generation models, which condition video generation on reference images, have shown emerging visual instruction-following capability, allowing certain visual cues in reference images to act as implicit control signals for video generation. However, this capability also introduces a previously overlooked risk: adversaries may exploit visual instructions to inject malicious intent through the image modality. In this work, we uncover this risk by proposing Visual Instruction Injection (VII), a training-free and transferable jailbreaking framework that intentionally disguises the malicious intent of unsafe text prompts as benign visual instructions in the safe reference image. Specifically, VII coordinates a Malicious Intent Reprogramming module to distill malicious intent from unsafe text prompts while minimizing their static harmfulness, and a Visual Instruction Grounding module to ground the distilled intent onto a safe input image by rendering visual instructions that preserve semantic consistency with the original unsafe text prompt, thereby inducing harm- ful content during I2V generation. Empirically, our extensive experiments on four state-of-the-art commercial I2V models (Kling-v2.5-turbo, Gemini Veo-3.1, Seedance-1.5-pro, and PixVerse-V5) demonstrate that VII achieves Attack Success Rates of up to 83.5% while reducing Refusal Rates to near zero, significantly outperforming existing baselines.
+            </p>
+          </div>
+        </section>
+
+        <section id="demos" class="section">
+          <h2>Demos</h2>
+
+          <div id="demos-root" class="demos-root" aria-live="polite">
+            <div class="loading">Loading demos…</div>
+          </div>
+        </section>
+
+        <section id="bibtex" class="section">
+          <h2>BibTeX</h2>
+          <div class="card">
+            <pre class="codeblock">@article{zheng2026vii,
+  title={VII: Visual Instruction Injection for Jailbreaking Image-to-Video Generation Models},
+  author={Zheng, Bowen and Xiang, Yongli and Hong, Ziming and Lin, Zerong and Yu, Chaojian and Liu, Tongliang and You, Xinge},
+  journal={arXiv preprint arXiv:2602.20999},
+  year={2026}
+}</pre>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p class="credit">
+          The design of this project page is inspired by previous academic project
+          <a href="https://cvlab-kaist.github.io/DeepForcing/" target="_blank" rel="noopener noreferrer">Deep Forcing</a>.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Image Lightbox -->
+    <div id="img-lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+      <button id="img-lightbox-close" class="lightbox-close" type="button" aria-label="Close image">
+        <i class="fa fa-times" aria-hidden="true"></i>
+      </button>
+      <img id="img-lightbox-img" alt="" />
+    </div>
+
+    <!-- Video Lightbox -->
+    <div id="video-lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Video viewer">
+      <button id="video-lightbox-close" class="lightbox-close" type="button" aria-label="Close video">
+        <i class="fa fa-times" aria-hidden="true"></i>
+      </button>
+      <video id="video-lightbox-player" controls playsinline></video>
+    </div>
+
+    <!-- Confirm Original Video Modal -->
+    <div id="confirm-modal" class="prompt-modal" role="dialog" aria-modal="true" aria-label="Confirm viewing original video">
+      <div class="prompt-modal-card">
+        <button id="confirm-modal-close" type="button" class="prompt-modal-close" aria-label="Close confirmation">
+          <i class="fa fa-times" aria-hidden="true"></i>
+        </button>
+        <h3 class="prompt-modal-title">Confirm viewing original output</h3>
+        <p class="muted" style="margin-top: -4px;">
+          You are currently viewing a masked preview (not the original output). The original video may contain sensitive content and is provided strictly for academic research and safety evaluation.
+        </p>
+        <div class="confirm-actions">
+          <button id="confirm-cancel" class="btn btn-ghost" type="button">Cancel</button>
+          <button id="confirm-accept" class="btn btn-primary" type="button">I understand, show original</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
